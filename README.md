@@ -17,24 +17,18 @@ clone https://github.com/kullaniciadi/proje-adi.git
   
 ## Backend Projesini Çalıştırma
 
-### Kurulum Adımları
-
-   cd backend
-
  # `Projeyi Başlatma`
 
 ```
+cd backend
 npm run start
  ```
 ## Frontend Projesini Çalıştırma
 
-### Kurulum Adımları
-
-   cd Frontend
-
  # `Projeyi Başlatma`
 
  ```
+cd Frontend
  npm run dev
 ```
 
