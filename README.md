@@ -11,9 +11,9 @@
 
 # `Depoyu Klonlayın`
 
-    ```
-    clone https://github.com/kullaniciadi/proje-adi.git
-    ```
+```
+clone https://github.com/kullaniciadi/proje-adi.git
+```
   
 ## Backend Projesini Çalıştırma
 
@@ -23,9 +23,9 @@
 
  # `Projeyi Başlatma`
 
-    ```
-    npm run start
-    ```
+```
+npm run start
+ ```
 ## Frontend Projesini Çalıştırma
 
 ### Kurulum Adımları
@@ -34,9 +34,9 @@
 
  # `Projeyi Başlatma`
 
-    ```
-    npm run dev
-    ```
+ ```
+ npm run dev
+```
 
 ## Proje Özeti
 
