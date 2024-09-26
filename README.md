@@ -9,7 +9,7 @@
 - Node.js (v14 veya üstü)
 - MySQL (v5.7 veya üstü)
 
-### Depoyu Klonlayın:
+# `Depoyu Klonlayın`
 
     ```
      clone https://github.com/kullaniciadi/proje-adi.git
@@ -22,7 +22,7 @@
 
    cd backend
 
- **Projeyi Başlatma:**
+ # `Projeyi Başlatma`
 
     ```
    npm run start
@@ -34,7 +34,7 @@
 
    cd Frontend
 
- **Projeyi Başlatma:**
+ # `Projeyi Başlatma`
 
     ```
    npm run dev
@@ -48,18 +48,22 @@ Bu proje, **Node.js** ve **Nest.js** kullanarak bir RESTful API geliştirmeyi ve
 ## Backend
 
 - **Veritabanı**: MySQL veya PostgreSQL. ORM kullanılmadan query builder ile işlem yapılacak.
+
 - **API Endpoint'leri**:
-  1. **GET /users**: Tüm kullanıcıları paginasyon ve arama ile döndürür.
-  2. **GET /users/**: Belirli bir kullanıcıyı döndürür.
-  3. **POST /users/save**: Yeni kullanıcı verilerini encrypt ederek kaydeder.
-  4. **POST /users/update/<id>**: Mevcut kullanıcı verilerini günceller.
-  5. **POST /users/delete/<id>**: Mevcut kullanıcıyı siler.
+
+  - **GET /users**: Tüm kullanıcıları paginasyon ve arama ile döndürür.
+  - **GET /users/**: Belirli bir kullanıcıyı döndürür.
+  - **POST /users/save**: Yeni kullanıcı verilerini encrypt ederek kaydeder.
+  - **POST /users/update/<id>**: Mevcut kullanıcı verilerini günceller.
+  - **POST /users/delete/<id>**: Mevcut kullanıcıyı siler.
 
 ## Frontend
 
 - **Teknoloji**: React (Ant Design).
+
 - **Özellikler**:
-  1. Kullanıcı verilerinin listelenmesi.
-  2. Arama input'u.
-  3. Kayıt düzenleme.
-  4. Yeni kayıt ekleme, güncelleme ve silme.
+
+  - Kullanıcı verilerinin listelenmesi.
+  - Arama input'u.
+  - Kayıt düzenleme.
+  - Yeni kayıt ekleme, güncelleme ve silme.
