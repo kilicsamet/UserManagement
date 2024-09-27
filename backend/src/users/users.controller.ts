@@ -8,14 +8,25 @@ export class UsersController {
 
   @Get()
   async getUsers(
-      @Query('page') page: string = '1',
-      @Query('pageSize') pageSize: string = '10',
-      @Query('filter') filter?: string,
-  ): Promise<{ users: User[], total: number }> { 
-      const pageNum = parseInt(page, 10) || 1; 
-      const sizeNum = parseInt(pageSize, 10) || 10; 
-      return this.usersService.findAll(pageNum, sizeNum, filter);
+    @Query('page') page: string = '1',
+    @Query('pageSize') pageSize: string = '10',
+    @Query('filter') filter?: string,
+    @Query('minAge') minAge?: string,
+    @Query('maxAge') maxAge?: string,
+    @Query('role') role?: string,
+    @Query('country') country?: string,
+    @Query('district') district?: string,
+  ): Promise<{ users: User[], total: number }> {
+    const pageNum = parseInt(page, 10) || 1; 
+    const sizeNum = parseInt(pageSize, 10) || 10; 
+    const ageRange = {
+      min: minAge ? parseInt(minAge, 10) : undefined,
+      max: maxAge ? parseInt(maxAge, 10) : undefined,
+    };
+  
+    return this.usersService.findAll(pageNum, sizeNum, filter, ageRange, role, country, district);
   }
+  
   
 
   @Get(':id')
