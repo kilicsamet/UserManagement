@@ -178,7 +178,6 @@ const UserEdit = () => {
                         value === ""
                       ) {
                         return Promise.reject(
-                          new Error("Lütfen yaşınızı girin!")
                         );
                       }
                       if (value < 0) {

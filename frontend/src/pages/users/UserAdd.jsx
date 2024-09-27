@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Form, Input, Button, Spin, Card, Row, Col, notification, Breadcrumb } from "antd";
+import { Form, Input, Button, Spin, Card, Row, Col, notification, Breadcrumb, Select } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAPI } from "../../services/UserAPI";
 import InputMask from "react-input-mask";
@@ -137,7 +137,6 @@ const UserAdd = () => {
                         value === ""
                       ) {
                         return Promise.reject(
-                          new Error("Lütfen yaşınızı girin!")
                         );
                       }
                       if (value < 0) {
